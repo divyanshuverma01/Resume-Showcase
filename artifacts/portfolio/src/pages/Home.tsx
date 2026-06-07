@@ -91,7 +91,7 @@ export default function Home() {
             transition={{ duration: 0.8, ease: "easeOut", delay: 0.1 }}
             className="md:col-span-5 z-10 order-1 md:order-2 flex justify-center md:justify-end"
           >
-            <div className="relative group w-64 h-64 md:w-80 md:h-80">
+            <div className="relative group w-64 aspect-[9/16] md:w-72">
               {/* Decorative background shape */}
               <div className="absolute inset-0 border border-secondary/30 translate-x-4 translate-y-4 group-hover:translate-x-2 group-hover:translate-y-2 transition-transform duration-300" />
               
