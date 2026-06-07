@@ -1,0 +1,14 @@
+{
+  "buildCommand": "pnpm --filter @workspace/portfolio run build",
+  "outputDirectory": "artifacts/portfolio/dist/public",
+  "build": {
+    "env": {
+      "PORT": "3000",
+      "BASE_PATH": "/"
+    }
+  },
+  "env": {
+    "PORT": "3000",
+    "BASE_PATH": "/"
+  }
+}

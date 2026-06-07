@@ -1,0 +1,15 @@
+node_modules
+**/node_modules
+dist
+**/dist
+.local
+.cache
+.git
+.replit
+tmp
+out-tsc
+*.tsbuildinfo
+.expo
+.expo-shared
+.cursor
+.github
