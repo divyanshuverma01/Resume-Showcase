@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ArrowRight, Code2, GraduationCap, Layout, MapPin, Search, Star, Terminal } from "lucide-react";
+import { ArrowRight, Code2, GraduationCap, Layout, MapPin, Search, Star, Terminal, Database, Cpu, Smartphone } from "lucide-react";
 import { useEffect } from "react";
 
 const ANIM_STAGGER = 0.1;
@@ -23,7 +23,7 @@ export default function Home() {
       <nav className="fixed top-0 left-0 w-full z-50 bg-background/80 backdrop-blur-md border-b border-white/5 py-4">
         <div className="max-w-6xl mx-auto px-6 flex items-center justify-between">
           <div className="font-serif text-2xl font-bold tracking-tight text-white cursor-pointer" onClick={() => scrollTo('top')}>
-            DP.
+            DV.
           </div>
           <div className="hidden md:flex gap-8 text-sm font-medium text-muted-foreground">
             {['About', 'Skills', 'Experience', 'Projects', 'Education'].map((item) => (
@@ -59,13 +59,13 @@ export default function Home() {
           >
             <h2 className="text-secondary font-mono tracking-widest text-sm uppercase mb-6 flex items-center gap-3">
               <span className="w-12 h-[1px] bg-secondary" />
-              Full-Stack Developer
+              Full-Stack Developer & CS Student
             </h2>
             <h1 className="font-serif text-6xl md:text-8xl lg:text-[100px] leading-[0.9] text-white tracking-tight mb-8">
-              Divyanshu<br />Pandey
+              Divyanshu<br />Verma
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground font-light max-w-2xl leading-relaxed">
-              Computer Science undergraduate from SRMCEM, Lucknow, crafting precise, thoughtful, and scalable technical solutions.
+              Enthusiastic Computer Science student building scalable backend systems, AI integrations, and real-world full-stack applications.
             </p>
             
             <div className="mt-12 flex items-center gap-6">
@@ -99,7 +99,7 @@ export default function Home() {
                 viewport={{ once: true }}
                 className="text-xl md:text-2xl leading-relaxed text-muted-foreground font-light mb-8"
               >
-                I am a dedicated Computer Science student (B.Tech, 2023–2027) with a passion for bridging the gap between intricate backend systems and refined user interfaces.
+                I am a dedicated Computer Science student with a strong foundation in programming and full-stack development. I enjoy building real-world applications and exploring the intersections of scalable backend architecture and artificial intelligence.
               </motion.p>
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
@@ -111,11 +111,11 @@ export default function Home() {
                 <div>
                   <h4 className="text-white font-bold mb-2 uppercase tracking-widest text-xs">Education</h4>
                   <p className="text-muted-foreground">B.Tech in Computer Science Engineering</p>
-                  <p className="text-muted-foreground">SRMCEM, Lucknow (CGPA: 7.2)</p>
+                  <p className="text-muted-foreground">SRMCEM, Lucknow (3rd Year)</p>
                 </div>
                 <div>
-                  <h4 className="text-white font-bold mb-2 uppercase tracking-widest text-xs">Timeline</h4>
-                  <p className="text-muted-foreground">2023 – 2027</p>
+                  <h4 className="text-white font-bold mb-2 uppercase tracking-widest text-xs">Focus</h4>
+                  <p className="text-muted-foreground">Backend Systems & AI</p>
                 </div>
               </motion.div>
             </div>
@@ -128,18 +128,18 @@ export default function Home() {
           
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             {[
-              { name: "Java", icon: Code2 },
+              { name: "C++ / Java", icon: Code2 },
               { name: "Python", icon: Terminal },
-              { name: "HTML & CSS", icon: Layout },
               { name: "JavaScript", icon: Code2 },
-              { name: "MySQL", icon: Search },
-              { name: "DSA", icon: Terminal },
-              { name: "Git/GitHub", icon: Code2 },
-              { name: "OOP", icon: Code2 },
-              { name: "Responsive Web", icon: Layout },
-              { name: "REST API", icon: Search },
+              { name: "MERN Stack", icon: Layout },
+              { name: "Flask", icon: Terminal },
+              { name: "MySQL / MongoDB", icon: Database },
+              { name: "Flutter", icon: Smartphone },
+              { name: "AI Integration", icon: Cpu },
+              { name: "Git / GitHub", icon: Code2 },
+              { name: "OOP & DSA", icon: Code2 },
+              { name: "REST APIs", icon: Search },
               { name: "Problem Solving", icon: Star },
-              { name: "CLI Basics", icon: Terminal },
             ].map((skill, index) => (
               <motion.div
                 key={skill.name}
@@ -180,7 +180,7 @@ export default function Home() {
                   <h3 className="text-2xl font-serif text-white mb-2">Web Development Intern</h3>
                   <p className="text-secondary font-mono text-sm mb-6">SRDT</p>
                   <p className="text-muted-foreground leading-relaxed">
-                    Developed web applications utilizing HTML, CSS, and JavaScript. Integrated MySQL databases for efficient data management and successfully executed CRUD operations to ensure robust full-stack functionality.
+                    Focused on full-stack development using Flask backend, frontend technologies, and MySQL integration. Gained hands-on experience in building robust database-driven applications.
                   </p>
                 </div>
               </motion.div>
@@ -192,13 +192,13 @@ export default function Home() {
                 className="grid md:grid-cols-4 gap-8 group"
               >
                 <div className="md:col-span-1 text-sm font-mono text-muted-foreground pt-1">
-                  Short Term Training
+                  Internship
                 </div>
                 <div className="md:col-span-3 pb-12 border-b border-white/10 group-last:border-none">
-                  <h3 className="text-2xl font-serif text-white mb-2">Training Program</h3>
-                  <p className="text-secondary font-mono text-sm mb-6">L&T</p>
+                  <h3 className="text-2xl font-serif text-white mb-2">Mobile Application Developer</h3>
+                  <p className="text-secondary font-mono text-sm mb-6">L&T EduTech</p>
                   <p className="text-muted-foreground leading-relaxed">
-                    Engaged in mobile app development concepts, grasping industry-level software engineering practices, and collaborating effectively within teamwork-driven environments.
+                    Learned Flutter basics and mobile app development concepts, translating ideas into cross-platform applications and engaging user interfaces.
                   </p>
                 </div>
               </motion.div>
@@ -211,7 +211,7 @@ export default function Home() {
           <h2 className="font-serif text-4xl text-white mb-4">Selected Work</h2>
           <div className="w-8 h-[2px] bg-secondary mb-16" />
 
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid md:grid-cols-3 gap-8">
             <motion.div 
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -219,10 +219,10 @@ export default function Home() {
               className="group relative block h-full"
             >
               <div className="h-full border border-white/10 bg-card/30 p-8 hover:border-secondary/30 transition-colors flex flex-col">
-                <div className="font-mono text-xs text-secondary mb-4 uppercase tracking-widest">HTML | CSS | JavaScript</div>
-                <h3 className="text-3xl font-serif text-white mb-4">Portfolio Website</h3>
+                <div className="font-mono text-xs text-secondary mb-4 uppercase tracking-widest">Node.js | Express | Socket.io</div>
+                <h3 className="text-2xl font-serif text-white mb-4">Real-Time Chat App</h3>
                 <p className="text-muted-foreground mb-8 flex-grow">
-                  A responsive personal portfolio leveraging CSS Flexbox and Grid. Implemented smooth UI interactions and aesthetic transitions entirely with vanilla JavaScript.
+                  Built a real-time chat system with instant messaging capabilities, focusing on backend performance and scalable connections via WebSockets.
                 </p>
                 <div className="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center group-hover:bg-secondary group-hover:border-secondary group-hover:text-background transition-all">
                   <ArrowRight className="w-4 h-4" />
@@ -238,10 +238,29 @@ export default function Home() {
               className="group relative block h-full"
             >
               <div className="h-full border border-white/10 bg-card/30 p-8 hover:border-secondary/30 transition-colors flex flex-col">
-                <div className="font-mono text-xs text-secondary mb-4 uppercase tracking-widest">Python | JS | MySQL</div>
-                <h3 className="text-3xl font-serif text-white mb-4">Rental House System</h3>
+                <div className="font-mono text-xs text-secondary mb-4 uppercase tracking-widest">Flask | MySQL | AI</div>
+                <h3 className="text-2xl font-serif text-white mb-4">House Rental Platform</h3>
                 <p className="text-muted-foreground mb-8 flex-grow">
-                  A full-stack property management platform. Features include a robust MySQL backend, secure user authentication, advanced property filtering, and a comprehensive admin panel.
+                  Developed a property listing and rental platform with integrated AI features. Designed complex APIs and a structured database schema.
+                </p>
+                <div className="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center group-hover:bg-secondary group-hover:border-secondary group-hover:text-background transition-all">
+                  <ArrowRight className="w-4 h-4" />
+                </div>
+              </div>
+            </motion.div>
+
+            <motion.div 
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.2 }}
+              className="group relative block h-full"
+            >
+              <div className="h-full border border-white/10 bg-card/30 p-8 hover:border-secondary/30 transition-colors flex flex-col">
+                <div className="font-mono text-xs text-secondary mb-4 uppercase tracking-widest">Flask | Python | Web</div>
+                <h3 className="text-2xl font-serif text-white mb-4">Flask Chat Web App</h3>
+                <p className="text-muted-foreground mb-8 flex-grow">
+                  A full-stack web application showcasing complete CRUD operations, routing, and robust state management utilizing Flask.
                 </p>
                 <div className="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center group-hover:bg-secondary group-hover:border-secondary group-hover:text-background transition-all">
                   <ArrowRight className="w-4 h-4" />
@@ -263,9 +282,9 @@ export default function Home() {
               </h2>
               <div className="space-y-8 relative before:absolute before:inset-0 before:ml-2 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-white/10 before:to-transparent">
                 {[
-                  { deg: "B.Tech CSE", inst: "SRMCEM Lucknow", score: "CGPA 7.2", year: "2023–2027" },
-                  { deg: "Class XII", inst: "CBSE Board", score: "80%", year: "2023" },
-                  { deg: "Class X", inst: "CBSE Board", score: "90%", year: "2021" }
+                  { deg: "B.Tech CSE", inst: "SRMCEM Lucknow", score: "3rd Year", year: "Present" },
+                  { deg: "Class XII", inst: "Central Academy", score: "85.2%", year: "" },
+                  { deg: "Class X", inst: "Central Academy", score: "94.6%", year: "" }
                 ].map((item, i) => (
                   <motion.div 
                     key={i}
@@ -276,7 +295,7 @@ export default function Home() {
                   >
                     <div className="md:hidden absolute left-0 w-4 h-4 rounded-full bg-background border-2 border-secondary top-1" />
                     <div className="p-6 bg-card/20 border border-white/5 relative">
-                      <div className="text-secondary font-mono text-sm mb-2">{item.year}</div>
+                      {item.year && <div className="text-secondary font-mono text-sm mb-2">{item.year}</div>}
                       <h4 className="text-xl text-white font-serif mb-1">{item.deg}</h4>
                       <p className="text-muted-foreground text-sm">{item.inst}</p>
                       <p className="text-white/60 text-sm mt-2 font-mono">{item.score}</p>
@@ -290,18 +309,16 @@ export default function Home() {
             <div>
               <h2 className="font-serif text-3xl text-white mb-12 flex items-center gap-3">
                 <Star className="text-secondary w-6 h-6" />
-                Achievements
+                Certifications & Achievements
               </h2>
               <div className="space-y-4">
                 {[
-                  { title: "Google Cloud Study Jam", subtitle: "Certified (2025)" },
-                  { title: "SRDT Web Development Internship", subtitle: "Certified" },
-                  { title: "3 Days UHV Workshop", subtitle: "Certificate of Participation" },
-                  { title: "Inter College Tech Fest", subtitle: "Winner (Programming/Development)" },
-                  { title: "Scout Guide National Program", subtitle: "Gold Medal (2018)" },
-                  { title: "Intra School Cricket Competition", subtitle: "Gold Medal (2022)" },
-                  { title: "School Science Exhibition", subtitle: "Silver Medal (2017)" },
-                  { title: "College Hostel Sports Committee", subtitle: "Member (Leadership & Event Management)" }
+                  { title: "Full Stack Python Development", subtitle: "SRDT (Flask, MySQL)" },
+                  { title: "Mobile Application Developer", subtitle: "L&T EduTech" },
+                  { title: "MERN & Flask Applications", subtitle: "Built Multiple Apps" },
+                  { title: "AI Integration", subtitle: "Integrated into Web Apps" },
+                  { title: "Strong Problem-Solving", subtitle: "C++, Java, Python" },
+                  { title: "Continuous Learning", subtitle: "AI & ML enthusiast" }
                 ].map((cert, i) => (
                   <motion.div 
                     key={i}
@@ -331,21 +348,40 @@ export default function Home() {
             <h2 className="text-secondary font-mono tracking-widest text-sm uppercase mb-6">What's Next?</h2>
             <h3 className="font-serif text-5xl md:text-7xl text-white mb-8">Get In Touch</h3>
             <p className="text-lg text-muted-foreground mb-12 max-w-2xl mx-auto font-light">
-              I'm currently looking for new opportunities and my inbox is always open. Whether you have a question or just want to say hi, I'll try my best to get back to you!
+              I'm always open to new opportunities, collaborations, and conversations about tech and AI. Whether you have a question or just want to connect, feel free to reach out!
             </p>
-            <a 
-              href="mailto:divyanshu@example.com"
-              className="inline-block px-8 py-5 bg-white text-background font-bold uppercase tracking-widest text-sm hover:bg-secondary transition-colors"
-            >
-              Say Hello
-            </a>
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
+              <a 
+                href="mailto:divyanshuvermadv619@gmail.com"
+                className="px-8 py-5 bg-white text-background font-bold uppercase tracking-widest text-sm hover:bg-secondary transition-colors"
+              >
+                Say Hello
+              </a>
+              <a 
+                href="https://github.com/divyanshuverma01"
+                target="_blank"
+                rel="noreferrer"
+                className="text-sm font-bold uppercase tracking-widest text-white hover:text-secondary transition-colors"
+              >
+                GitHub
+              </a>
+              <a 
+                href="https://linkedin.com/in/divyanshu-verma-63072b304"
+                target="_blank"
+                rel="noreferrer"
+                className="text-sm font-bold uppercase tracking-widest text-white hover:text-secondary transition-colors"
+              >
+                LinkedIn
+              </a>
+            </div>
+            <p className="mt-8 text-muted-foreground font-mono text-sm">Or call at 7007717410</p>
           </motion.div>
         </section>
 
         {/* FOOTER */}
         <footer className="py-8 border-t border-white/10 text-center text-sm font-mono text-muted-foreground flex flex-col md:flex-row items-center justify-between px-6 max-w-6xl mx-auto">
-          <p>© {new Date().getFullYear()} Divyanshu Pandey.</p>
-          <p className="mt-4 md:mt-0">Designed & Engineered with Precision.</p>
+          <p>© {new Date().getFullYear()} Divyanshu Verma.</p>
+          <p className="mt-4 md:mt-0">Engineered with Precision & Passion.</p>
         </footer>
 
       </main>
