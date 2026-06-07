@@ -98,7 +98,7 @@ export default function Home() {
               {/* Profile Image container */}
               <div className="w-full h-full overflow-hidden border border-white/10 bg-card/50 backdrop-blur-sm relative">
                 <img 
-                  src="/profile.png" 
+                  src="/profile.jpg" 
                   alt="Divyanshu Verma" 
                   className="w-full h-full object-cover object-center grayscale group-hover:grayscale-0 transition-all duration-500 scale-105 group-hover:scale-100"
                 />
