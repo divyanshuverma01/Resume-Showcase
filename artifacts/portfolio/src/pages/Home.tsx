@@ -49,13 +49,14 @@ export default function Home() {
       <main id="top" className="pt-32">
         
         {/* HERO */}
-        <section className="min-h-[80vh] flex flex-col justify-center max-w-6xl mx-auto px-6 relative">
+        <section className="min-h-[80vh] grid md:grid-cols-12 gap-12 items-center max-w-6xl mx-auto px-6 relative py-12">
           <div className="absolute top-1/4 -right-1/4 w-96 h-96 bg-secondary/10 blur-[120px] rounded-full pointer-events-none" />
+          
           <motion.div 
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
-            className="max-w-4xl z-10"
+            className="md:col-span-7 z-10 order-2 md:order-1"
           >
             <h2 className="text-secondary font-mono tracking-widest text-sm uppercase mb-6 flex items-center gap-3">
               <span className="w-12 h-[1px] bg-secondary" />
@@ -81,6 +82,27 @@ export default function Home() {
               >
                 Get in touch
               </button>
+            </div>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, scale: 0.95 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.8, ease: "easeOut", delay: 0.1 }}
+            className="md:col-span-5 z-10 order-1 md:order-2 flex justify-center md:justify-end"
+          >
+            <div className="relative group w-64 h-64 md:w-80 md:h-80">
+              {/* Decorative background shape */}
+              <div className="absolute inset-0 border border-secondary/30 translate-x-4 translate-y-4 group-hover:translate-x-2 group-hover:translate-y-2 transition-transform duration-300" />
+              
+              {/* Profile Image container */}
+              <div className="w-full h-full overflow-hidden border border-white/10 bg-card/50 backdrop-blur-sm relative">
+                <img 
+                  src="/profile.png" 
+                  alt="Divyanshu Verma" 
+                  className="w-full h-full object-cover object-center grayscale group-hover:grayscale-0 transition-all duration-500 scale-105 group-hover:scale-100"
+                />
+              </div>
             </div>
           </motion.div>
         </section>
